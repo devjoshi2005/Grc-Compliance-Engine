@@ -1,0 +1,9 @@
+{
+      "name": "Cloud Security GRC Lab",
+        "features": {
+            "ghcr.io/devcontainers/features/terraform:1": {},
+            "ghcr.io/devcontainers/features/aws-cli:1": {},
+            "ghcr.io/devcontainers/features/azure-cli:1": {}
+        },
+        "postCreateCommand": "terraform -install-autocomplete"
+}
