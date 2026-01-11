@@ -1,0 +1,40 @@
+name: GRC-Autopilot-Pipeline
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Every 6 hours
+  workflow_dispatch:      
+
+jobs:
+  compliance-and-risk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: 1. Update Steampipe State
+        run: |
+          export STEAMPIPE_DATABASE_PASSWORD=${{ secrets.DB_PASS }}
+          python3 fetch_tags.py # Your Steampipe script
+
+      - name: 2. Prowler Scan & Filter
+        run: |
+          prowler aws --severity critical high --format json
+          prowler azure --severity critical high --format json
+          python3 run_filter.py # Your filter script
+
+      - name: 3. LlamaIndex Remediation & OPA Check
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python3 ai_remediation.py # LlamaIndex + ChatGPT logic
+          opa eval -d policy/security_policy.rego -i generated_fix.json "data.terraform.analysis.deny"
+
+      - name: 4. Update PyFair Risk Scoring
+        run: python3 risk_engine.py
+
+      - name: 5. Commit & Push Data to Dashboard
+        run: |
+          git config user.name "GRC-Bot"
+          git add risk_quantification_report.json
+          git commit -m "Automated Risk Update: $(date)"
+          git push
