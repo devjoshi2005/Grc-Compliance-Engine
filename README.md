@@ -40,6 +40,6 @@ Think of this project as a auto-regulator who scans any cloud resource for any c
 
 **Step by Step Process (Layman's View):**
 1) Build a sample cloud configuration - create a sample cloud configuration (in this case multi cloud data transfer setup between aws and azure)
-2) Perform a prowler scan - Using tools like Prowler either by 
+2) Perform a prowler scan - Using tools like Prowler either by GUI/command line
 
 
