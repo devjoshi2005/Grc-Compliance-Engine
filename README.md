@@ -7,7 +7,7 @@ graph LR
     subgraph AWS
         A[AWSC IAM] 
         B[S3 BUCKET<br>AES 256]
-        C[AWSC RDS<br>(Relational Database Service)]
+        C[AWSC RDS <br> Relational Database Service]
         D[AWSC DATASYNC]
         E[AWSC DataSync Agent]
     end
