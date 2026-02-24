@@ -16,16 +16,16 @@ graph TD
     J --> K[Compliance Report PDF Generation]
     H --> L[Streamlit for Dashboard Display]
 
-    style A fill:#000000,stroke:#000,stroke-width:3px
-style C fill:#000000,stroke:#000,stroke-width:3px
-style E fill:#000000,stroke:#000,stroke-width:3px
-style B fill:#000000,stroke:#000,stroke-width:3px
-style D fill:#000000,stroke:#000,stroke-width:3px
-style F fill:#000000,stroke:#000,stroke-width:3px
-style G fill:#000000,stroke:#000,stroke-width:3px
-style H fill:#000000,stroke:#000,stroke-width:3px
-style I fill:#000000,stroke:#000,stroke-width:3px
-style J fill:#000000,stroke:#000,stroke-width:3px
-style K fill:#000000,stroke:#000,stroke-width:3px
-style L fill:#000000,stroke:#000,stroke-width:3px   
+    style A fill:#f9f9f9,stroke:#333,color:#000,font-weight:bold
+style C fill:#f9f9f9,stroke:#333,color:#000,font-weight:bold
+style E fill:#f9f9f9,stroke:#333,color:#000,font-weight:bold
+style B fill:#e0f7fa,stroke:#333,color:#000,font-weight:bold
+style D fill:#e0f7fa,stroke:#333,color:#000,font-weight:bold
+style F fill:#e0f7fa,stroke:#333,color:#000,font-weight:bold
+style G fill:#e0f7fa,stroke:#333,color:#000,font-weight:bold
+style H fill:#e0f7fa,stroke:#333,color:#000,font-weight:bold
+style I fill:#fffde7,stroke:#333,color:#000,font-weight:bold
+style J fill:#fffde7,stroke:#333,color:#000,font-weight:bold
+style K fill:#fffde7,stroke:#333,color:#000,font-weight:bold
+style L fill:#fffde7,stroke:#333,color:#000,font-weight:bold
 ```
