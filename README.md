@@ -1,8 +1,9 @@
-# Multi Cloud GRC (Governance,Risk & Compliance) Automation Engine with Remediation
-Github repository that contains python,rego and terraform code demonstrating the working of GRC Compliance Check with Remediation involving a multi cloud environment setup of data transfer scenario using AWS and Azure as cloud providers.Also tools used are Llama_Index,ChromaDB,OPA (Open Policy Agent) using Rego Code ,Prowler,SteamPipe,Risk Quantification & Streamlit
+# Multi Cloud GRC (Governance,Risk & Compliance) Automation Engine with Remediation using Prowler and Steampipe
+
+This project shows the demonstration of compliance scan of a multi cloud scenario of aws and azure . 
 
 
-```
+```mermaid
 graph TD
     A[Policy Documents<br>CIS AWS Foundations<br>NIST SP800-53<br>NIST ISO-MAPPING<br>PCI-DSS v4.0.1] -->|Ingest| B[LlamaIndex]
     C[AWS] --> D[Prowler]
