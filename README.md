@@ -1,64 +1,12 @@
 # Multi Cloud GRC (Governance,Risk & Compliance) Automation Engine with Remediation using Prowler and Steampipe
 
-This project shows the demonstration of compliance scan of a multi cloud scenario of Aws and Azure.  
+This project shows how can we securely build & monitor a multi cloud setup (in this case : Data migration setup between AWS and Azure) by continuously scanning with tools like prowler,creating a remediation code using AI agents like openAI with training sets from prowler findings and compliance documents set (like PCI-DSS,NIST AWS,CISS) stored in vector database like chromaDB while being audited by OPA REGO policy, filtering critical and imporant events using steampipe SQL based queries,creating a risk quantification based report and creating a dashboard using streamlit for data visualization.
 
-```mermaid
-graph LR
-    subgraph AWS
-        A[AWSC IAM] 
-        B[S3 BUCKET<br>AES 256]
-        C[AWSC RDS <br> Relational Database Service]
-        D[AWSC DATASYNC]
-        E[AWSC DataSync Agent]
-    end
+If you want to view a detailed technical report you can view 
+**For one time deployment , you can either run github actions workflow file (configured using your secrets) or run this website**
 
-    subgraph Azure
-        F[AZURE SERVICE PRINCIPAL]
-        G[AZURE KEY VAULT]
-        H[AZURE STORAGE ACCOUNT]
-        I[AZURE STORAGE CONTAINER]
-        J[AZURE DATA FACTORY]
-        K[AZURE SQL SERVER]
-        L[Direct connection string<br>via user:password]
-    end
 
-    B --> D
-    C --> D
-    D --> E
-    E --> J
-    F --> G
-    G --> H
-    H --> I
-    I --> J
-    J --> K
-    L --> K
-
-    style A fill:#f9f9f9,stroke:#333,color:#000,font-weight:bold
-    style B fill:#f9f9f9,stroke:#333,color:#000,font-weight:bold
-    style C fill:#f9f9f9,stroke:#333,color:#000,font-weight:bold
-    style D fill:#e0f7fa,stroke:#333,color:#000,font-weight:bold
-    style E fill:#e0f7fa,stroke:#333,color:#000,font-weight:bold
-    style F fill:#fffde7,stroke:#333,color:#000,font-weight:bold
-    style G fill:#fffde7,stroke:#333,color:#000,font-weight:bold
-    style H fill:#e0f7fa,stroke:#333,color:#000,font-weight:bold
-    style I fill:#e0f7fa,stroke:#333,color:#000,font-weight:bold
-    style J fill:#e0f7fa,stroke:#333,color:#000,font-weight:bold
-    style K fill:#f9f9f9,stroke:#333,color:#000,font-weight:bold
-    style L fill:#ffcdd2,stroke:#333,color:#000,font-weight:bold
-
-    classDef aws fill:#f9f9f9,stroke:#333;
-    classDef azureStorage fill:#e0f7fa,stroke:#333;
-    classDef azureSecurity fill:#fffde7,stroke:#333;
-    classDef azureSQL fill:#f9f9f9,stroke:#333;
-    classDef warning fill:#ffcdd2,stroke:#333;
-
-    class A,B,C aws
-    class H,I,J azureStorage
-    class F,G azureSecurity
-    class K azureSQL
-    class L warning
-   
-```
+<img width="1291" height="761" alt="Image" src="https://github.com/user-attachments/assets/f582cc93-157e-46ab-98c8-f6e6480db7e3" />
 
 
 ```mermaid
@@ -87,3 +35,11 @@ style J fill:#fffde7,stroke:#333,color:#000,font-weight:bold
 style K fill:#fffde7,stroke:#333,color:#000,font-weight:bold
 style L fill:#fffde7,stroke:#333,color:#000,font-weight:bold
 ```
+
+Think of this project as a auto-regulator who scans any cloud resource for any compliance issues and generate findings,if issues/irregularities are found then first it will provide auto remediation code based on Compliance report trainingset , extracts critical data from findings and provides quantification reports and dashboard for visualization and auditing
+
+**Step by Step Process (Layman's View):**
+1) Build a sample cloud configuration - create a sample cloud configuration (in this case multi cloud data transfer setup between aws and azure)
+2) Perform a prowler scan - Using tools like Prowler either by 
+
+
