@@ -56,7 +56,8 @@ graph LR
     class H,I,J azureStorage
     class F,G azureSecurity
     class K azureSQL
-    class L warning   
+    class L warning
+   
 ```
 
 
