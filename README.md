@@ -2,7 +2,7 @@
 
 This project shows how can we securely build & monitor a multi cloud setup (in this case : Data migration setup between AWS and Azure) by continuously scanning with tools like prowler,creating a remediation code using AI agents like openAI with training sets from prowler findings and compliance documents set (like PCI-DSS,NIST AWS,CISS) stored in vector database like chromaDB while being audited by OPA REGO policy, filtering critical and imporant events using steampipe SQL based queries,creating a risk quantification based report and creating a dashboard using streamlit for data visualization.
 
-Technical Report - **[technicalreport.md](https://github.com/devjoshi2005/Grc-Compliance-Engine/blob/main/technicalreport.md)**
+Technical Report - **[technicalreport.md](https://github.com/devjoshi2005/Grc-Compliance-Engine/blob/main/technicalreport.md)**\n
 Business Report - **[businessreport.md](https://github.com/devjoshi2005/Grc-Compliance-Engine/blob/main/businessreport.md)**
 
 **For one time deployment , you can either run github actions workflow file (configured using your secrets) or run this website**
