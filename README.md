@@ -7,8 +7,7 @@ If you want to view a detailed technical report you can view **[technicalreport.
 **For one time deployment , you can either run github actions workflow file (configured using your secrets) or run this website**
 
 
-<img width="1291" height="761" alt="Image" src="https://github.com/user-attachments/assets/f582cc93-157e-46ab-98c8-f6e6480db7e3" />
-
+<img width="1291" height="761" alt="Image" src="https://github.com/user-attachments/assets/f8479f91-8a27-45d3-9052-6f7918e3d089" />
 
 ```mermaid
 graph TD
