@@ -12,7 +12,7 @@ The system reduces compliance assessment preparation time from industry-standard
 | Issue | Industry Data | Source |
 |-------|--------------|--------|
 | Manual compliance assessments consume 4,000-6,000 hours annually per enterprise | Average security team spends 40% of time on compliance vs. threat hunting | Gartner, 2024 |
-| Mean time to remediate critical misconfigurations: 97 days | Cloud misconfiguration remains #1 cause of data breaches | IBM Security X-Force, 2024 |
+| Mean time to remediate critical misconfigurations: 97 days | Cloud misconfiguration remains main cause of data breaches (acc. to OWASP Top 10 report 2025) | IBM Security X-Force, 2024 |
 | SOC 2 Type II audit preparation costs $50K-$150K and 3-6 months | Startup compliance bottleneck to enterprise sales | Vanta/Drata market analysis, 2024 |
 | 68% of cloud security alerts are false positives | Alert fatigue causes critical findings to be missed | Orca Security State of Cloud Security, 2024 |
 
@@ -146,13 +146,13 @@ Where:
 
 ###  References & Benchmarks
 
-1. **Prowler Performance**: https://github.com/prowler-cloud/prowler — Parallel execution architecture, 3,000+ checks
-2. **Steampipe Benchmarks**: https://steampipe.io/docs — SQL query performance on 10K+ resources
-3. **IBM Data Breach Report 2025**: $4.88M average breach cost, cloud misconfiguration leading cause
-4. **Gartner Security Operations**: 40% of security team time spent on compliance activities
-5. **CIS Benchmarks**: Industry-standard configuration baselines (AWS v3.0.0, Azure v2.0.0)
-6. **OpenAI API Latency**: GPT-4-turbo average response time 15-30 seconds for code generation tasks
-
+1. **Prowler Performance**: [Prowler](https://github.com/prowler-cloud/prowler) — Parallel execution architecture, 3,000+ checks
+2. **Steampipe Benchmarks**: [Steampipe](https://steampipe.io/docs) — SQL query performance on 10K+ resources
+3. **IBM Data Breach Report 2025** [data-breach](https://www.ibm.com/reports/data-breach) : $4.88M average breach cost, cloud misconfiguration leading cause
+4. **Gartner Security Operations** [Gartner](https://www.gartner.com/en/information-technology/insights/cybersecurity): 40% of security team time spent on compliance activities
+5. **CIS Benchmarks** [CIS](https://www.cisecurity.org/cis-benchmarks): Industry-standard configuration baselines (AWS v3.0.0, Azure v2.0.0)
+6. **OpenAI API Latency** [OpenAI](https://developers.openai.com/api/docs/guides/latency-optimization): GPT-4-turbo average response time 15-30 seconds for code generation tasks
+7. **OWASP Top 10 2025** [OWASP](https://owasp.org/Top10/2025/) : Publishes top 10 vulnerabilities found across many enterprises systems annually 
 ---
 
 ###  Deployment Requirements
@@ -179,7 +179,8 @@ Where:
 | Deployment flexibility | Self-hosted/Cloud |  SaaS only |  AWS-only |
 
 ---
-view of AI-generated code—about 6-8% has issues OPA catches, but logic errors need manual verification. It's also test-environment validated; production deployment would need rate limiting handling and persistent storage for the vector database."
+view of AI-generated code—about 6-8% has issues OPA catches, but logic errors need manual verification. It's also test-environment validated; 
+production deployment would need rate limiting handling and persistent storage for the vector database."
 
 ---
 
