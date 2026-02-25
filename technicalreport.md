@@ -281,7 +281,7 @@ The GRC Compliance Engine demonstrates production-ready implementation of compli
 - ISACA. (2024). *State of Cybersecurity 2024 Report*. [https://www.isaca.org/resources/reports/state-of-cybersecurity-2024](https://www.isaca.org/resources/reports/state-of-cybersecurity-2024)
 - Verizon. (2024). *2024 Data Breach Investigations Report*. [https://www.verizon.com/business/resources/reports/dbir/](https://www.verizon.com/business/resources/reports/dbir/)
 - A-LIGN. (2024). *SOC 2 Audit Pricing Guide*[https://www.a-lign.com/articles/soc-2-buyers-guide](https://www.a-lign.com/articles/soc-2-buyers-guide).
-
+- IBM Data Breach Report (2025). *Download Report from this link provided*[https://www.ibm.com/reports/data-breach](https://www.ibm.com/reports/data-breach)
 ---
 
 **Repository**: [https://github.com/devjoshi2005/Grc-Compliance-Engine](https://github.com/devjoshi2005/Grc-Compliance-Engine)  
