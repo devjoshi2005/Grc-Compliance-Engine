@@ -10,6 +10,35 @@ The GRC Compliance Engine is a multi-cloud governance, risk, and compliance auto
 
 ---
 
+## Step by Step Execution
+```mermaid
+flowchart LR
+    A[Step1 : Cloud configuration sample setup]:::code --> B[Step2 : Prowler Scan of aws and azure cloud environments]:::zap
+    B --> C[Step3 : Vector Database like CHROMADB is used for storing large amount of compliance documents]:::sonar
+    C --> D[Step4 : Prowler findings are filtered based on importance]:::docker
+    D --> E[Step5 : Trivy scans the image pulled from the ECR for misconfigurations,secrets or CVE'S ]:::trivy
+    E --> F[Step6 : Sonarqube and Trivy log values are sent to Graylog for log management and analysis ]:::graylog
+    F --> G[Step7 : Codebase is extracted by pulling image in ECR and saved in S3 bucket]:::s3
+    G --> H[Step8 : Codebase along with Sonarqube and Trivy log messages ONLY are sent to Claude Sonnet model accessed using AWS Bedrock]:::bedrock
+    H --> I[Step9 : Claude Sonnet rectifies the code snippets from given data and provides remediated code snippets]:::ai
+    I --> J[Step10 : A new commit branch is created from main branch which we send the remediated code snippets from Claude as PR]:::pr
+    J --> A
+
+    %% --- Darker fills with white text for readability ---
+    classDef code fill:#0d47a1,stroke:#ffffff,color:#ffffff;      %% Dark blue
+    classDef zap fill:#e65100,stroke:#ffffff,color:#ffffff;       %% Dark orange
+    classDef sonar fill:#4a148c,stroke:#ffffff,color:#ffffff;     %% Deep purple
+    classDef docker fill:#006064,stroke:#ffffff,color:#ffffff;    %% Teal
+    classDef trivy fill:#b71c1c,stroke:#ffffff,color:#ffffff;     %% Dark red
+    classDef graylog fill:#1b5e20,stroke:#ffffff,color:#ffffff;   %% Dark green
+    classDef s3 fill:#827717,stroke:#ffffff,color:#ffffff;        %% Olive
+    classDef bedrock fill:#3e2723,stroke:#ffffff,color:#ffffff;   %% Dark brown
+    classDef ai fill:#880e4f,stroke:#ffffff,color:#ffffff;        %% Dark pink
+    classDef pr fill:#212121,stroke:#ffffff,color:#ffffff;        %% Dark gray
+
+```
+
+
 ## 1. Problem Statement & Market Context
 
 ### 1.1 The Compliance Crisis
