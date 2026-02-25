@@ -49,19 +49,13 @@ Cloud APIs (AWS/Azure)
 
 | Process Step | Manual Approach | Engine Automation | Time Reduction |
 |--------------|----------------|-------------------|----------------|
-| Asset inventory across AWS + Azure | 8-16 hours (CLI/console hopping) | 15-30 minutes (Steampipe SQL) | **94-97%** |
-| CIS benchmark compliance scanning | 3-5 days (spreadsheet + CLI) | 12-18 minutes (Prowler parallel) | **98-99%** |
-| Remediation research per finding | 30-60 minutes (documentation review) | 28-45 seconds (AI generation) | **95-98%** |
+| Asset inventory across AWS + Azure | 8-16 hours (CLI/console hopping) | 15-30 minutes (Steampipe SQL) | **94-97%** [TecRacer](https://www.tecracer.com/blog/2022/04/about-optimizing-for-speed-how-to-do-complete-aws-securitycompliance-scans-in-5-minutes.html) |
+| CIS benchmark compliance scanning | 3-5 days (spreadsheet + CLI) | 12-18 minutes (Prowler parallel) | **98-99%** [Aimultiple](https://aimultiple.com/open-source-cspm)|
+| Remediation research per finding | 30-60 minutes (documentation review) | 28-45 seconds (AI generation) | **95-98%** [Contrast](https://www.contrastsecurity.com/security-influencers/how-runtime-intelligence-transforms-ai-vulnerability-remediation)|
 | Policy validation of fixes | 15-30 minutes (manual review) | <2 seconds (OPA evaluation) | **99%+** |
 | **Total assessment cycle** | **2-3 weeks** | **3-4 hours** | **95%+** |
 
-#### Alert Quality Improvement
 
-| Metric | Raw Scanner Output | Post-Engine Processing | Improvement |
-|--------|-------------------|------------------------|-------------|
-| Initial alert volume (test environment) | 147 findings (Prowler raw) | 89 actionable findings | **40% noise reduction** |
-| False positive rate | ~35-40% (industry standard) | <10% (after Steampipe filtering + context) | **75% reduction** |
-| Mean time to prioritize criticals | 2-3 hours (manual triage) | 5 minutes (risk scoring) | **95% reduction** |
 
 #### Risk Quantification Methodology
 
