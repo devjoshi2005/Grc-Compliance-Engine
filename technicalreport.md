@@ -4,7 +4,6 @@
 
 The GRC Compliance Engine is a multi-cloud governance, risk, and compliance automation platform that addresses the critical shortage of automated compliance solutions in enterprise cloud environments. Built using Python, Terraform, and cloud-native APIs, this project demonstrates production-grade implementation of compliance-as-code principles that reduce audit preparation time by 60-70% compared to manual processes (Gartner, 2024).
 
-<img width="1431" height="931" alt="Image" src="https://github.com/user-attachments/assets/1e48454c-edb0-4a02-aad6-0ae0c0385097" />
 
 **Key Achievement**: Automated compliance monitoring across AWS, Azure, and GCP with real-time drift detection and auto-remediation capabilities, achieving 94% compliance coverage for CIS benchmarks.
 
@@ -45,16 +44,16 @@ Organizations face a compounding compliance challenge:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    GRC Compliance Engine                     │
+│                    GRC Compliance Engine                    │
 ├─────────────────────────────────────────────────────────────┤
 │  Compliance Scanner Layer                                   │
 │  ├── AWS Config Rules (CIS Benchmarks)                      │
 │  ├── Azure Policy Evaluations                               │
 │  └── GCP Security Command Center Findings                   │
 ├─────────────────────────────────────────────────────────────┤
-│  Risk Analysis Engine (Python/Pandas)                       │
+│  Risk Analysis Engine (Python)                              │
 │  ├── Severity Classification (Critical/High/Medium/Low)     │
-│  ├── Business Impact Scoring                                │
+│  ├── Business Impact Scoring (IBM data breach report 2025)  │
 │  └── Compliance Drift Detection                             │
 ├─────────────────────────────────────────────────────────────┤
 │  Remediation Layer (Terraform + Boto3)                      │
@@ -75,15 +74,15 @@ The project implements a sophisticated cross-cloud compliance data pipeline:
 
 **AWS ↔ Azure Secure Data Transfer Scenario**
 - **Use Case**: Demonstrates compliance for organizations with multi-cloud data residency requirements
-- **Implementation**: Automated validation of encryption in transit, key rotation policies, and access logging across both clouds
+- **Implementation**: Use of AWS IAM policy, azure service principal with least privilege permissions,key vault for encrypting data in azure storage account & SAS token for accessing it
 - **Business Value**: Shows understanding of real-world regulatory requirements (GDPR Article 44, HIPAA 164.312)
 
 ### 2.3 Core Components
 
 | Component | Technology | Purpose | Production Equivalent |
 |-----------|------------|---------|----------------------|
-| Compliance Scanner | Python + Cloud SDKs | Multi-cloud control assessment | AWS Config, Azure Policy, GCP Forseti |
-| Risk Engine | Pandas + NumPy | Severity scoring & prioritization | ServiceNow GRC, RSA Archer |
+| Compliance Scanner | Python | Multi-cloud control assessment | AWS Config, Azure Policy, GCP Forseti |
+| Risk Engine | Pandas | Severity scoring & prioritization | ServiceNow GRC, RSA Archer |
 | Remediation | Terraform + Boto3 | Infrastructure-as-code fixes | HashiCorp Sentinel, AWS Systems Manager |
 | Evidence Store | SQLite + S3 | Audit trail & compliance proof | AWS Audit Manager, Azure Compliance Manager |
 | Visualization | Streamlit | Executive dashboards | Tableau, PowerBI, custom SOC dashboards |
@@ -188,11 +187,11 @@ Cross-cloud data transfers are high-risk events requiring:
 
 | Capability | ServiceNow GRC | RSA Archer | GRC Compliance Engine |
 |------------|---------------|------------|----------------------|
-| Multi-cloud native | Partial | Limited | ✅ Native AWS/Azure/GCP |
-| Deployment time | 3-6 months | 6-12 months | ✅ Hours (Terraform) |
-| Customization | Complex | Complex | ✅ Python extensibility |
-| Cost | $100K+ annually | $150K+ annually | ✅ Open-source core |
-| Audit evidence automation | Basic | Basic | ✅ Comprehensive |
+| Multi-cloud native | Partial | Limited | Native AWS/Azure/GCP |
+| Deployment time | 3-6 months | 6-12 months | Hours (Terraform) |
+| Customization | Complex | Complex | Python extensibility |
+| Cost | $100K+ annually | $150K+ annually | Open-source core |
+| Audit evidence automation | Basic | Basic | Comprehensive |
 
 ### 6.2 vs. Open-Source Alternatives
 
@@ -205,30 +204,17 @@ Cross-cloud data transfers are high-risk events requiring:
 
 ---
 
-## 7. Skills Demonstrated
 
-This project validates enterprise-relevant capabilities:
 
-| Skill Category | Specific Demonstration | F500 Relevance |
-|----------------|------------------------|----------------|
-| **Cloud Architecture** | Multi-cloud API integration, data residency compliance | Essential for hybrid cloud strategies |
-| **Infrastructure as Code** | Terraform for remediation, policy-as-code | Standard for cloud governance teams |
-| **Data Engineering** | Pandas for risk scoring, SQLite for evidence storage | Compliance data pipeline experience |
-| **Security Automation** | Python SDKs, automated remediation workflows | SOC automation, SOAR integration |
-| **Risk Management** | Business-context severity scoring | Enterprise risk quantification |
-| **Audit & Compliance** | Evidence collection, control mapping | Internal audit, external assessor readiness |
+## 7. Future Roadmap & Scalability
 
----
-
-## 8. Future Roadmap & Scalability
-
-### 8.1 Immediate Enhancements
+### 7.1 Immediate Enhancements
 
 - **Custom Control Frameworks**: Support for NIST CSF, ISO 27001, PCI-DSS mappings
 - **Integration Expansion**: ServiceNow, Jira Service Management, Slack alerting
 - **ML-Enhanced Detection**: Anomaly detection for compliance drift patterns
 
-### 8.2 Enterprise Scalability
+### 7.2 Enterprise Scalability
 
 The architecture supports:
 - **Horizontal scaling**: Stateless scanner design enables parallel cloud account processing
@@ -237,7 +223,7 @@ The architecture supports:
 
 ---
 
-## 9. Conclusion
+## 8. Conclusion
 
 The GRC Compliance Engine demonstrates production-ready implementation of compliance-as-code principles that address a $12.3 billion market need (Gartner 2024). By automating the full compliance lifecycle—from detection through remediation to audit evidence—this project validates capabilities essential for modern cloud security teams.
 
@@ -251,19 +237,18 @@ The GRC Compliance Engine demonstrates production-ready implementation of compli
 
 ## References
 
-- Flexera. (2024). *2024 State of the Cloud Report*. [https://www.flexera.com/blog/cloud/cloud-computing-trends-2024-state-of-the-cloud-report/](https://www.flexera.com/blog/cloud/cloud-computing-trends-2024-state-of-the-cloud-report/)
+- Flexera. (2024). *2024 State of the Cloud Report*. [https://www.flexera.com/blog/finops/cloud-computing-trends-flexera-2024-state-of-the-cloud-report/](https://www.flexera.com/blog/finops/cloud-computing-trends-flexera-2024-state-of-the-cloud-report/)
 - Gartner. (2024). *Market Guide for Cloud Governance and Compliance Tools*.
 - ISACA. (2024). *State of Cybersecurity 2024 Report*. [https://www.isaca.org/resources/reports/state-of-cybersecurity-2024](https://www.isaca.org/resources/reports/state-of-cybersecurity-2024)
 - Verizon. (2024). *2024 Data Breach Investigations Report*. [https://www.verizon.com/business/resources/reports/dbir/](https://www.verizon.com/business/resources/reports/dbir/)
-- A-LIGN. (2024). *SOC 2 Audit Pricing Guide*.
+- A-LIGN. (2024). *SOC 2 Audit Pricing Guide*[https://www.a-lign.com/articles/soc-2-buyers-guide](https://www.a-lign.com/articles/soc-2-buyers-guide).
 
 ---
 
 **Repository**: [https://github.com/devjoshi2005/Grc-Compliance-Engine](https://github.com/devjoshi2005/Grc-Compliance-Engine)  
 **Author**: Dev Joshi  
-**Contact**: [Your LinkedIn/Email]
+**Contact**: [devjoshi2005](https://www.linkedin.com/in/devjoshi2005/)
 
 ---
 
-*This report was prepared for technical evaluation by hiring managers, security architects, and engineering leadership at Fortune 500 companies and high-growth startups.*
 
