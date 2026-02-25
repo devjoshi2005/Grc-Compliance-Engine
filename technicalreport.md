@@ -4,7 +4,7 @@
 
 The GRC Compliance Engine is a multi-cloud governance, risk, and compliance automation platform that addresses the critical shortage of automated compliance solutions in enterprise cloud environments. Built using Python, Terraform, and cloud-native APIs, this project demonstrates production-grade implementation of compliance-as-code principles that reduce audit preparation time by 60-70% compared to manual processes (Gartner, 2024).
 
-<img width="1333" height="495" alt="Image" src="https://github.com/user-attachments/assets/a97e45b6-14bb-4e9f-88a5-e4fcef6179e1" />
+<img width="965" height="376" alt="Image" src="https://github.com/user-attachments/assets/b9c5cbb9-f780-4c9e-8c06-6775ec0c07ea" />
 
 **Key Achievement**: Automated compliance monitoring across AWS, Azure, and GCP with real-time drift detection and auto-remediation capabilities, achieving 94% compliance coverage for CIS benchmarks.
 
