@@ -12,7 +12,7 @@ The system reduces compliance assessment preparation time from industry-standard
 | Issue | Industry Data | Source |
 |-------|--------------|--------|
 | Manual compliance assessments consume 4,000-6,000 hours annually per enterprise | Average security team spends 40% of time on compliance vs. threat hunting | Gartner, 2024 |
-| Mean time to remediate critical misconfigurations: 97 days | Cloud misconfiguration remains main cause of data breaches (acc. to OWASP Top 10 report 2025) | IBM Security X-Force, 2024 |
+| Mean time to remediate critical misconfigurations: 97 days | Cloud misconfiguration remains main cause of data breaches  | IBM Security X-Force, 2024 |
 | SOC 2 Type II audit preparation costs $50K-$150K and 3-6 months | Startup compliance bottleneck to enterprise sales | Vanta/Drata market analysis, 2024 |
 | 68% of cloud security alerts are false positives | Alert fatigue causes critical findings to be missed | Orca Security State of Cloud Security, 2024 |
 
