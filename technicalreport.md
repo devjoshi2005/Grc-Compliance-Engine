@@ -98,7 +98,7 @@ Organizations face a compounding compliance challenge:
 ```
 ### 2.2 Technical Implementation
 
-# 1) Terraform Implemenetation
+
 
 **Video Walkthrough** : https://github.com/user-attachments/assets/eaf2e155-259c-4765-b0ea-cacb07bb985b
 
