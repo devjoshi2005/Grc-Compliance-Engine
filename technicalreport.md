@@ -103,16 +103,27 @@ Organizations face a compounding compliance challenge:
 # 1) Terraform Implemenetation
 
 **Video Walkthrough** : https://github.com/user-attachments/assets/eaf2e155-259c-4765-b0ea-cacb07bb985b
+
 **Video Walkthrough** : https://github.com/user-attachments/assets/d65f7bb7-affe-4de2-bc50-ec3a693acbcf
+
 **Video Walkthrough** : https://github.com/user-attachments/assets/d5637ad3-24e3-42fe-9602-1a985fa95463
+
 **Video Walkthrough** : https://github.com/user-attachments/assets/c7fa3f57-9f3c-4749-9551-949fb0af5fc1
+
 **Video Walkthrough** : https://github.com/user-attachments/assets/9073e2ab-5c68-4812-8c70-ae37e469fc9e
+
 **Video Walkthrough** : https://github.com/user-attachments/assets/b04bbe7f-0b11-4f1e-8a2c-d43734b8dd93
+
 **Video Walkthrough** : https://github.com/user-attachments/assets/feffbdca-232f-4a1f-8144-9dd92547e38a
+
 **Video Walkthrough** : https://github.com/user-attachments/assets/56768a86-062b-4480-ac71-2f6350af84d1
+
 **Video Walkthrough** : https://github.com/user-attachments/assets/b6b71d18-7f2a-4346-8aa7-5c9e4b826185
+
 **Video Walkthrough** : https://github.com/user-attachments/assets/979fa5c7-21bf-453e-a120-dbc7d7baf22e
+
 **Video Walkthrough** : https://github.com/user-attachments/assets/c32ff130-a5fe-4e6d-af4a-6a6a277b6c61
+
 **Video Walkthrough** : https://github.com/user-attachments/assets/2f20aeb7-4b4e-4194-ad7e-c52ed94cbace
 
 
