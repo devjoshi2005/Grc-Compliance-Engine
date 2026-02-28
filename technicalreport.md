@@ -98,17 +98,14 @@ Organizations face a compounding compliance challenge:
 ```
 ### 2.2 Technical Implementation
 
-1) *Multi Cloud Scenario* - A multi-cloud data migration environment was established between AWS and Azure to support disaster recovery and backup operations. Data is transferred from AWS S3 buckets to Azure Storage Account containers using AWS DataSync, while AWS RDS databases are synced with Azure SQL Server using Azure Data Factory. All core resources were provisioned via Terraform, as demonstrated in the five accompanying walkthrough videos. Additional supporting components include an AWS DataSync Agent with custom networking, Azure Key Vault for storage encryption, Log Analytics Workspace with Azure Monitor for observability, least-privilege IAM roles via AWS IAM and Azure Service Principal, and Azure Shared Access Signature (SAS) tokens for secure cross-cloud authentication.
+**1) Multi Cloud Scenario** - A multi-cloud data migration environment was established between AWS and Azure to support disaster recovery and backup operations. Data is transferred from AWS S3 buckets to Azure Storage Account containers using AWS DataSync, while AWS RDS databases are synced with Azure SQL Server using Azure Data Factory. All core resources were provisioned via Terraform, as demonstrated in the five accompanying walkthrough videos. Additional supporting components include an AWS DataSync Agent with custom networking, Azure Key Vault for storage encryption, Log Analytics Workspace with Azure Monitor for observability, least-privilege IAM roles via AWS IAM and Azure Service Principal, and Azure Shared Access Signature (SAS) tokens for secure cross-cloud authentication.
 
-*Video Walkthrough* : https://github.com/user-attachments/assets/eaf2e155-259c-4765-b0ea-cacb07bb985b
-
-*Video Walkthrough* : https://github.com/user-attachments/assets/d65f7bb7-affe-4de2-bc50-ec3a693acbcf
-
-*Video Walkthrough* : https://github.com/user-attachments/assets/d5637ad3-24e3-42fe-9602-1a985fa95463
-
-*Video Walkthrough* : https://github.com/user-attachments/assets/c7fa3f57-9f3c-4749-9551-949fb0af5fc1
-
-*Video Walkthrough* : https://github.com/user-attachments/assets/9073e2ab-5c68-4812-8c70-ae37e469fc9e
+**Video Walkthroughs**  
+- [Video 1](https://github.com/user-attachments/assets/eaf2e155-259c-4765-b0ea-cacb07bb985b)  
+- [Video 2](https://github.com/user-attachments/assets/d65f7bb7-affe-4de2-bc50-ec3a693acbcf)  
+- [Video 3](https://github.com/user-attachments/assets/d5637ad3-24e3-42fe-9602-1a985fa95463)  
+- [Video 4](https://github.com/user-attachments/assets/c7fa3f57-9f3c-4749-9551-949fb0af5fc1)  
+- [Video 5](https://github.com/user-attachments/assets/9073e2ab-5c68-4812-8c70-ae37e469fc9e)
 
 
 
