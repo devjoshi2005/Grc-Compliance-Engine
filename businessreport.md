@@ -7,6 +7,28 @@ The system reduces compliance assessment preparation time from industry-standard
 
 ---
 
+**Time Savings Impact**
+
+```mermaid
+bar chart
+    title "Compliance Process Time Reduction"
+    "Manual Process" : 100
+    "With GRC Engine" : 5
+    section Asset Inventory
+    "Manual" : 100
+    "Engine" : 3
+    section CIS Scanning
+    "Manual" : 100
+    "Engine" : 2
+    section Remediation Research
+    "Manual" : 100
+    "Engine" : 2
+    section Total Cycle
+    "Manual" : 100
+    "Engine" : 5
+```
+
+
 ### Problem Statement (Industry-Verified)
 
 | Issue | Industry Data | Source |
@@ -56,6 +78,17 @@ Cloud APIs (AWS/Azure)
 | **Total assessment cycle** | **2-3 weeks** | **3-4 hours** | **95%+** |
 
 
+**Process Time Reduction Achieved**
+
+```mermaid
+bar chart
+    title "Time Reduction (%)"
+    "Asset Inventory" : 96
+    "CIS Scanning" : 99
+    "Remediation Research" : 97
+    "Policy Validation" : 99
+    "Total Assessment Cycle" : 95
+```
 
 #### Risk Quantification Methodology
 
@@ -87,6 +120,14 @@ Where:
 | Time to enterprise sales | 6+ months | 2-3 months |
 | **Net benefit** | — | **$50K-$70K cost avoidance + 3-4 months faster revenue** |
 
+```mermaid
+bar chart
+    title "Mid-Market SaaS Company (Series B)"
+    "Traditional SOC2 Prep" : 120000
+    "With GRC Engine" : 40000
+```
+
+
 #### Scenario B: Enterprise Cloud Migration (Fortune 500)
 
 | Attribute | Manual Assessment | Engine-Assisted |
@@ -99,6 +140,7 @@ Where:
 *Note: Hourly rates vary by organization ($75-$150/hour blended). Capacity creation ≠ cost savings unless headcount is reduced (rare in security).*
 
 ---
+
 
 ### Compliance Coverage
 
@@ -177,6 +219,13 @@ view of AI-generated code—about 6-8% has issues OPA catches, but logic errors 
 production deployment would need rate limiting handling and persistent storage for the vector database."
 
 ---
+
+```mermaid
+pie title "Monthly Operating Cost Breakdown"
+    "Infrastructure (Streamlit + DB)" : 40
+    "OpenAI / Local LLM" : 80
+    "Total Monthly Cost" : 120
+```
 
 **Report Version**: 1.0  
 **Based on Repository**: github.com/devjoshi2005/Grc-Compliance-Engine  
