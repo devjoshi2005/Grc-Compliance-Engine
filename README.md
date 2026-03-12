@@ -7,7 +7,10 @@ Technical Report - **[technicalreport.md](https://github.com/devjoshi2005/Grc-Co
 
 Business Report - **[businessreport.md](https://github.com/devjoshi2005/Grc-Compliance-Engine/blob/main/businessreport.md)**
 
-**For one time deployment , you can either run github actions workflow file (configured using your secrets) or run this website**
+
+
+
+**For one time deployment , you can either run github actions workflow file (configured using your secrets) or Hover over to this github repository [GRC-App](https://github.com/devjoshi2005/GRC-App)**
 
 
 <img width="1291" height="761" alt="Image" src="https://github.com/user-attachments/assets/f8479f91-8a27-45d3-9052-6f7918e3d089" />
